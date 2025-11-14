@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 229 6% 30%;
+    --card: 0 0% 100%;
+    --card-foreground: 229 6% 30%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 6% 30%;
+    --primary: 191 57% 63%;
+    --primary-foreground: 229 6% 30%;
+    --secondary: 39 91% 65%;
+    --secondary-foreground: 229 6% 30%;
+    --accent: 191 57% 63%;
+    --accent-foreground: 229 6% 30%;
+    --muted: 229 6% 30%;
+    --muted-foreground: 229 6% 50%;
+    --border: 229 6% 90%;
+    --input: 229 6% 90%;
+    --ring: 191 57% 63%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 229 6% 12%;
+    --foreground: 0 0% 98%;
+    --card: 229 6% 16%;
+    --card-foreground: 0 0% 98%;
+    --popover: 229 6% 16%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 191 57% 73%;
+    --primary-foreground: 229 6% 12%;
+    --secondary: 39 91% 75%;
+    --secondary-foreground: 229 6% 12%;
+    --accent: 191 57% 73%;
+    --accent-foreground: 229 6% 12%;
+    --muted: 229 6% 30%;
+    --muted-foreground: 229 6% 80%;
+    --border: 229 6% 30%;
+    --input: 229 6% 30%;
+    --ring: 191 57% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glow {
+    filter: drop-shadow(0 0 0.75rem hsl(var(--primary)));
+  }
+  
+  .wiggle {
+    animation: wiggle 0.3s ease-in-out;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .dark .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .moving-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s linear infinite;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
