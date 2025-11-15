@@ -84,9 +84,19 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             Not financial advice, just bread advice. Keep your loaves and crumbs safe.
           </p>
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} $KNEAD. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center gap-2 sm:items-end">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} $KNEAD. All rights reserved.
+            </p>
+            <a
+              href="https://jermill.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground transition-colors hover:text-[#F5BC55]"
+            >
+              Created by <span className="font-semibold">jermill.dev</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
