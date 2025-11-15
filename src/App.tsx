@@ -13,6 +13,7 @@ import { Toaster } from "./components/ui/toaster";
 import { SplashScreen } from "./components/sections/splash-screen";
 import { SidebarMenu } from "./components/sidebar-menu";
 import { ThemeToggle } from "./components/theme-toggle";
+import { ContractBanner } from "./components/contract-banner";
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -23,6 +24,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
+      <ContractBanner />
       <ThemeToggle />
       <SidebarMenu />
       
