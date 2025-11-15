@@ -1,6 +1,5 @@
 import { BentoBox } from "@/components/ui/bento-box";
 import { TitleSection } from "./hero/title-section";
-import { SocialLinks } from "./hero/social-links";
 import { PUMP_URL } from "@/lib/constants";
 
 export function Hero() {
@@ -16,8 +15,6 @@ export function Hero() {
         <TitleSection />
         
         <div className="space-y-8 w-full">
-          <SocialLinks />
-          
           <div className="flex flex-col items-center gap-4">
             <a 
               href={PUMP_URL}
