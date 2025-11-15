@@ -16,15 +16,15 @@ export function ContractBanner() {
   };
 
   return (
-    <div className="relative z-50 border-b bg-gradient-to-r from-[#6AC9D8]/10 via-[#F5BC55]/10 to-[#6AC9D8]/10 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-3">
+    <div className="relative z-40 border-b bg-gradient-to-r from-[#6AC9D8]/10 via-[#F5BC55]/10 to-[#6AC9D8]/10 backdrop-blur-sm">
+      <div className="container mx-auto px-4 py-3 pt-14 sm:pt-16">
         <div className="flex flex-col items-center justify-between gap-3 sm:flex-row sm:gap-4">
           {/* Twitter Link */}
           <a
             href={SOCIAL_LINKS.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative z-50 group flex items-center gap-2 rounded-lg border border-border/50 bg-background/80 px-3 py-2 transition-all hover:border-[#1DA1F2] hover:bg-background hover:cursor-pointer sm:px-4"
+            className="relative z-10 group flex items-center gap-2 rounded-lg border border-border/50 bg-background/80 px-3 py-2 transition-all hover:border-[#1DA1F2] hover:bg-background hover:cursor-pointer sm:px-4"
             onClick={(e) => {
               e.stopPropagation();
               window.open(SOCIAL_LINKS.twitter, '_blank', 'noopener,noreferrer');

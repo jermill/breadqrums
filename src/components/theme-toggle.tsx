@@ -10,7 +10,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="fixed right-4 top-3 z-[101] rounded-full bg-background/40 backdrop-blur-[2px]"
+      className="fixed right-4 top-3 z-[101] rounded-full bg-background/40 backdrop-blur-[2px] pointer-events-auto"
     >
       <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
