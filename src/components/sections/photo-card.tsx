@@ -17,11 +17,11 @@ export function PhotoCard() {
         {/* Hover Effects */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#F5BC55]/20 via-transparent to-[#6AC9D8]/20 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         
-        {/* Image */}
+        {/* Image - Fills the card */}
         <img
           src="https://github.com/QRUMN/imgaes/blob/main/LilQrumFull.png?raw=true"
           alt="Lil Qrum in a Hoodie"
-          className="relative z-10 h-full w-full object-contain p-8 transition-all duration-500 will-change-transform group-hover:scale-105 group-hover:drop-shadow-2xl"
+          className="relative z-10 h-full w-full object-cover transition-all duration-500 will-change-transform group-hover:scale-105 group-hover:drop-shadow-2xl"
         />
         
         {/* Label */}
