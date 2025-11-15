@@ -16,7 +16,7 @@ export function ContractBanner() {
   };
 
   return (
-    <div className="border-b bg-gradient-to-r from-[#6AC9D8]/10 via-[#F5BC55]/10 to-[#6AC9D8]/10 backdrop-blur-sm">
+    <div className="relative z-50 border-b bg-gradient-to-r from-[#6AC9D8]/10 via-[#F5BC55]/10 to-[#6AC9D8]/10 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-col items-center justify-between gap-3 sm:flex-row sm:gap-4">
           {/* Twitter Link */}
@@ -24,8 +24,11 @@ export function ContractBanner() {
             href={SOCIAL_LINKS.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2 rounded-lg border border-border/50 bg-background/80 px-3 py-2 transition-all hover:border-[#1DA1F2] hover:bg-background hover:cursor-pointer sm:px-4"
-            style={{ pointerEvents: 'auto' }}
+            className="relative z-50 group flex items-center gap-2 rounded-lg border border-border/50 bg-background/80 px-3 py-2 transition-all hover:border-[#1DA1F2] hover:bg-background hover:cursor-pointer sm:px-4"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(SOCIAL_LINKS.twitter, '_blank', 'noopener,noreferrer');
+            }}
           >
             <Twitter className="h-4 w-4 text-[#1DA1F2]" />
             <span className="text-xs font-medium sm:text-sm">@breadqrums</span>
