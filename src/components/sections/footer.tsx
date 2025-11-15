@@ -39,7 +39,10 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">$KNEAD</h3>
             <p className="text-sm text-muted-foreground">
-              The crustiest coin on Solana. Rise with the Breadheads!
+              The official token of the Breadverse. Built by Breadheads, for Breadheads. 🍞
+            </p>
+            <p className="mt-2 text-xs font-semibold text-[#F5BC55]">
+              #BreadheadsStickyTogether
             </p>
           </div>
 

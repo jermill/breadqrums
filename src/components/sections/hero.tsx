@@ -28,9 +28,14 @@ export function Hero() {
               Get $KNEAD on Pump.fun
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
-            <p className="text-sm text-muted-foreground">
-              Rise with the Breadheads! Join the #LoafGang 🍞
-            </p>
+            <div className="text-center">
+              <p className="text-lg font-bold text-foreground">
+                Join the Breadheads! 🍞
+              </p>
+              <p className="text-sm text-muted-foreground">
+                The crustiest community in crypto
+              </p>
+            </div>
           </div>
         </div>
       </div>

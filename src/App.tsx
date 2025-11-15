@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Hero } from "./components/sections/hero";
+import { Community } from "./components/sections/community";
 import { OriginStory } from "./components/sections/origin-story";
 import { Characters } from "./components/sections/characters";
 import { Roadmap } from "./components/sections/roadmap";
@@ -32,22 +33,31 @@ export default function App() {
           <PhotoCard />
         </div>
 
-        {/* Main Content Sections */}
-        <div className="mb-6 grid gap-4 sm:gap-6 md:grid-cols-2">
-          <OriginStory />
-          <About />
+        {/* Community Spotlight - Full Width */}
+        <div className="mb-6">
+          <Community />
         </div>
 
-        {/* Secondary Sections */}
+        {/* Origin Story - Full Width */}
+        <div className="mb-6">
+          <OriginStory />
+        </div>
+
+        {/* Characters & Roadmap */}
         <div className="mb-6 grid gap-4 sm:gap-6 md:grid-cols-2">
           <Characters />
           <Roadmap />
         </div>
 
-        {/* Bottom Sections */}
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-          <Slogans />
+        {/* Why KNEAD & How to Buy */}
+        <div className="mb-6 grid gap-4 sm:gap-6 md:grid-cols-2">
+          <About />
           <HowToBuy />
+        </div>
+
+        {/* Slogans - Full Width */}
+        <div className="mb-6">
+          <Slogans />
         </div>
       </main>
 

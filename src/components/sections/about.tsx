@@ -10,14 +10,16 @@ export function About() {
             Why $KNEAD?
           </h2>
           <p className="mt-3 text-base text-muted-foreground sm:text-lg">
-            More than a token — it's your entry into the Breadverse
+            The Breadheads' ticket to the moon 🚀
           </p>
         </div>
 
-        <p className="text-center text-base leading-relaxed text-foreground sm:text-lg">
-          Hold it, stake it, trade it, and join thousands of Breadheads building something special. 
-          <span className="font-semibold text-[#F5BC55]"> When life gives you grains, make tokens.</span>
-        </p>
+        <div className="rounded-2xl border-2 border-[#F5BC55]/20 bg-gradient-to-br from-[#F5BC55]/10 to-[#6AC9D8]/10 p-5">
+          <p className="text-center text-base leading-relaxed text-foreground sm:text-lg">
+            Join <span className="font-bold text-[#F5BC55]">10,000+ Breadheads</span> holding, staking, and building the Breadverse together. 
+            <span className="font-bold text-[#6AC9D8]"> We're not just a community, we're a movement.</span>
+          </p>
+        </div>
 
         <div className="grid gap-3 sm:gap-4">
           {TOKENOMICS.map((item) => (
