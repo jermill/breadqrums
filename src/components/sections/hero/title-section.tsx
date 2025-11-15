@@ -20,9 +20,6 @@ export function TitleSection() {
       <p className="mt-2 text-base text-muted-foreground transition-colors group-hover:text-foreground sm:text-lg lg:text-xl">
         Pull up, Hop Out, Made Bread Look Sexy
       </p>
-      <div className="mt-4 rounded-full bg-[#F5BC55]/10 px-4 py-1.5 text-sm font-medium text-[#F5BC55] sm:text-base">
-        144M $KNEAD fresh out the oven
-      </div>
     </a>
   );
 }
