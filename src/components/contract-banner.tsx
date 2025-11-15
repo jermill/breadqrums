@@ -24,10 +24,11 @@ export function ContractBanner() {
             href={SOCIAL_LINKS.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2 rounded-lg border border-border/50 bg-background/80 px-3 py-2 transition-all hover:border-[#1DA1F2] hover:bg-background sm:px-4"
+            className="group flex items-center gap-2 rounded-lg border border-border/50 bg-background/80 px-3 py-2 transition-all hover:border-[#1DA1F2] hover:bg-background hover:cursor-pointer sm:px-4"
+            style={{ pointerEvents: 'auto' }}
           >
             <Twitter className="h-4 w-4 text-[#1DA1F2]" />
-            <span className="text-xs font-medium sm:text-sm">@BreadQrums</span>
+            <span className="text-xs font-medium sm:text-sm">@breadqrums</span>
           </a>
 
           {/* Contract Address */}
