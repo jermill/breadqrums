@@ -4,6 +4,7 @@ export const SOCIAL_LINKS = {
   telegram: 'https://t.me/breadqrums',
   tiktok: 'https://tiktok.com/@breadqrums',
   instagram: 'https://instagram.com/breadqrums',
+  chart: 'https://pump.fun/coin/BHGKB4j2BfaUyVMKsZUZk4igjFxRHxtU1kZz5gRGpump',
 };
 
 export const PUMP_URL = 'https://pump.fun/coin/BHGKB4j2BfaUyVMKsZUZk4igjFxRHxtU1kZz5gRGpump';

@@ -1,4 +1,4 @@
-import { Twitter, MessageCircle, ExternalLink, Globe } from "lucide-react";
+import { Twitter, MessageCircle, ExternalLink, Globe, TrendingUp } from "lucide-react";
 import { SOCIAL_LINKS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 
@@ -27,6 +27,12 @@ const socials = [
     icon: Globe,
     name: "Instagram",
     link: SOCIAL_LINKS.instagram,
+  },
+  {
+    icon: TrendingUp,
+    name: "Chart",
+    link: SOCIAL_LINKS.chart,
+    featured: true,
   },
 ];
 
@@ -57,7 +63,11 @@ export function Footer() {
                 <Button
                   key={social.name}
                   variant="link"
-                  className="h-auto w-fit justify-start p-0 text-muted-foreground hover:text-foreground"
+                  className={`h-auto w-fit justify-start p-0 transition-colors ${
+                    social.featured 
+                      ? 'font-bold text-[#F5BC55] hover:text-[#F5BC55]/80' 
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
                   onClick={() => window.open(social.link, '_blank')}
                 >
                   <social.icon className="mr-1.5 h-4 w-4" />
