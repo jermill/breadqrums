@@ -30,7 +30,7 @@ export function Characters() {
       </h2>
 
       <div className="space-y-4 sm:space-y-5">
-        {characters.map((character, index) => (
+        {characters.map((character) => (
           <div
             key={character.name}
             className="group relative overflow-hidden rounded-2xl border border-border/50 bg-gradient-to-br from-background/80 to-background/40 p-5 backdrop-blur-sm transition-all duration-300 hover:border-border hover:shadow-lg sm:p-6"

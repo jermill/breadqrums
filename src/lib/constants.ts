@@ -8,6 +8,8 @@ export const SOCIAL_LINKS = {
 
 export const PUMP_URL = 'https://pump.fun/coin/9pLdfxua1tyx9kieuVtJXTsBV2o52ozg7S4Rzjjfpump';
 
+export const CONTRACT_ADDRESS = '9pLdfxua1tyx9kieuVtJXTsBV2o52ozg7S4Rzjjfpump';
+
 export const TOKENOMICS = [
   { name: 'Fair Launch Pool', percentage: 90, description: 'Available for all Breadheads' },
   { name: 'Marketing Yeast', percentage: 5, description: 'Community Growth' },

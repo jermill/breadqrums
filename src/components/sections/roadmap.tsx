@@ -42,7 +42,7 @@ export function Roadmap() {
       </div>
 
       <div className="grid gap-3 sm:gap-4">
-        {features.map((feature, index) => (
+        {features.map((feature) => (
           <div
             key={feature.title}
             className="group flex items-start space-x-4 rounded-2xl border border-border/30 bg-gradient-to-r from-background/50 to-background/30 p-4 backdrop-blur-sm transition-all duration-300 hover:border-border hover:shadow-lg sm:space-x-5 sm:p-5"
