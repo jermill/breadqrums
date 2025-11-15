@@ -1,6 +1,6 @@
 export const SOCIAL_LINKS = {
   website: 'https://breadqrums.com',
-  twitter: 'https://x.com/BreadQrums',
+  twitter: 'https://x.com/breadqrums',
   telegram: 'https://t.me/breadqrums',
   tiktok: 'https://tiktok.com/@breadqrums',
   instagram: 'https://instagram.com/breadqrums',
